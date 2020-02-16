@@ -9,9 +9,7 @@ pipeline
                     {
                         sh 'echo cloning'
                     }
-                }
-            }
-            
+                }   
             stages
             {
                 stage ('print Build')
@@ -24,4 +22,4 @@ pipeline
                     
             }
     }   
-
+}
