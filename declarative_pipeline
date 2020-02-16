@@ -1,18 +1,17 @@
-
 pipeline
     {
         agent any
             stages
             {
-                stage('clone')
+                stage('print clone')
                 {
                     steps
                     {
                         sh 'echo cloning'
                     }
                 }                    
-            
-                stage ('Build')
+           
+                stage ('print Build')
                 {
                     steps
                     {
@@ -20,6 +19,6 @@ pipeline
                     }
                 }
                     
-            }
             
+            }
     }   
