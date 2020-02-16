@@ -11,20 +11,17 @@ pipeline
                     }
                 }
             }
-    }   
-
-    
-pipeline
-    {
-        agent any
+            
             stages
             {
-                stage('print build')
+                stage ('print Build')
                 {
                     steps
                     {
-                        sh 'echo building'
+                     sh 'echo building'
                     }
                 }
+                    
             }
     }   
+
