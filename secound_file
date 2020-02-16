@@ -1,0 +1,30 @@
+pipeline
+    {
+        agent any
+            stages
+            {
+                stage('print clone')
+                {
+                    steps
+                    {
+                        sh 'echo cloning'
+                    }
+                }
+            }
+    }   
+
+    
+pipeline
+    {
+        agent any
+            stages
+            {
+                stage('print build')
+                {
+                    steps
+                    {
+                        sh 'echo building'
+                    }
+                }
+            }
+    }   
